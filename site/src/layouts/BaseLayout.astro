@@ -1,0 +1,56 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="wrap nav">
+          <a class="brand" href="/">
+            <span class="brand-mark" aria-hidden="true">Q</span>
+            <span>QuietBabyGear</span>
+          </a>
+          <nav class="nav-links" aria-label="Primary navigation">
+            <a href="/tests/">Tests</a>
+            <a href="/methodology/">Methodology</a>
+            <a href="/lab-notes/">Lab Notes</a>
+            <a href="/about/">About</a>
+            <a href="/checklist/">3AM Checklist</a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <slot />
+      </main>
+      <footer class="site-footer">
+        <div class="wrap footer-grid">
+          <span>QuietBabyGear tests baby gear handling, cleaning, sound, and maintenance friction.</span>
+          <span>No medical advice. Some links may be affiliate links.</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

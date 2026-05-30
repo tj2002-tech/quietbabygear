@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Testing Methodology | QuietBabyGear";
+const description = "How QuietBabyGear tests baby gear cleaning time, sound level, leakage, one-handed use, battery drain, and mold-risk friction.";
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="prose">
+    <p class="eyebrow">Testing Protocol v1</p>
+    <h1>How we test baby gear when parents are tired.</h1>
+    <p class="lead">QuietBabyGear measures product friction, not medical outcomes. We focus on cleaning, noise, leakage, one-handed operation, battery drain, and long-term maintenance under realistic night-use conditions.</p>
+
+    <h2>What we do not test</h2>
+    <p>We do not provide medical advice, treatment guidance, symptom diagnosis, or claims about curing congestion. Our work is limited to product handling and consumer-use observations.</p>
+
+    <h2>Core metrics</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Meaning</th>
+          <th>Why it matters</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>MCT</td><td>Midnight Cleaning Time</td><td>How long cleanup takes when a parent is tired and the room is quiet.</td></tr>
+        <tr><td>SSS</td><td>Sleep Safe Sound</td><td>Measured and described sound level for night use.</td></tr>
+        <tr><td>OOH</td><td>One-Hand Operation</td><td>Whether the product can be handled while the other hand is occupied.</td></tr>
+        <tr><td>LFI</td><td>Leakage Frustration Index</td><td>How much leaking or dripping adds stress during use and cleanup.</td></tr>
+        <tr><td>MRS</td><td>Mold Risk Score</td><td>How hard the product is to dry and inspect over repeated use.</td></tr>
+        <tr><td>BDI</td><td>Battery Drain Index</td><td>How battery life behaves across repeated short sessions.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Standard testing environment</h2>
+    <ul>
+      <li>Low-light room or warm bedside lighting.</li>
+      <li>One-hand operation simulation.</li>
+      <li>Timed cleaning with the same stopwatch method.</li>
+      <li>Sound level measured at a fixed distance when possible.</li>
+      <li>Original photos of setup, parts, cleanup, residue, and long-term inspection.</li>
+    </ul>
+
+    <h2>Evidence rules</h2>
+    <p>Every product conclusion should be supported by measured data, dated lab notes, original product photos, or repeatable test observations. If a test is messy, inconclusive, or needs repeating, we say so.</p>
+  </article>
+</BaseLayout>
+

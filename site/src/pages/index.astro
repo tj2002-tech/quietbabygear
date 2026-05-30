@@ -1,0 +1,110 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "QuietBabyGear | Real-world baby gear testing";
+const description = "QuietBabyGear tests baby gear under real-world sleep-deprived parenting conditions, focusing on cleaning time, sound, leakage, and one-handed use.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Micro consumer research lab</p>
+        <h1>Baby gear tested for the hour nobody designs for.</h1>
+        <p class="lead">We test baby gear under real-world sleep-deprived parenting conditions: low light, one free hand, too many parts to clean, and a quiet room you do not want to wake up.</p>
+        <div class="actions">
+          <a class="button" href="/tests/">View testing results</a>
+          <a class="button secondary" href="/methodology/">Read the protocol</a>
+        </div>
+      </div>
+      <div class="bench" aria-label="QuietBabyGear testing bench summary">
+        <div class="bench-inner">
+          <p class="eyebrow">Current lab focus</p>
+          <div class="measurement-row">
+            <div class="measurement">
+              <strong>5</strong>
+              <span>Nasal aspirators</span>
+            </div>
+            <div class="measurement">
+              <strong>8</strong>
+              <span>Friction metrics</span>
+            </div>
+            <div class="measurement">
+              <strong>30</strong>
+              <span>Day mold check</span>
+            </div>
+            <div class="measurement">
+              <strong>3AM</strong>
+              <span>Cleaning scenario</span>
+            </div>
+          </div>
+          <p class="bench-note">Original product photographs and timed test media will be added as the first aspirators arrive and testing begins.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Testing metrics</h2>
+        <p>Our scoring system is built around the tiny points of friction that matter when a parent is tired, the room is quiet, and cleanup cannot wait until morning.</p>
+      </div>
+      <div class="metric-strip">
+        <div><b>MCT</b><span>Midnight Cleaning Time</span></div>
+        <div><b>SSS</b><span>Sleep Safe Sound</span></div>
+        <div><b>OOH</b><span>One-Hand Operation</span></div>
+        <div><b>MRS</b><span>Mold Risk Score</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Latest testing work</h2>
+        <p>These pages are built to hold measured data, original photos, and lab notes. Draft pages are published only when first-party testing can support the claims.</p>
+      </div>
+      <div class="article-list">
+        <a class="article-row" href="/tests/easiest-baby-nasal-aspirator-to-clean-at-3am/">
+          <span class="tag">MCT draft</span>
+          <div>
+            <h3>Easiest Baby Nasal Aspirator to Clean at 3AM</h3>
+            <p>A timed cleaning test comparing the first five aspirators under low-light, one-handed parent conditions.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">-></span>
+        </a>
+        <a class="article-row" href="/methodology/">
+          <span class="tag">Protocol</span>
+          <div>
+            <h3>QuietBabyGear Testing Protocol v1</h3>
+            <p>The measurement rules behind MCT, SSS, OOH, LFI, MRS, BDI, and long-term maintenance notes.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">-></span>
+        </a>
+        <a class="article-row" href="/lab-notes/">
+          <span class="tag">Lab Notes</span>
+          <div>
+            <h3>Original observations, not polished claims</h3>
+            <p>Short dated records from unboxing, cleaning, sound, leakage, and 30-day mold-risk checks.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">-></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section signup">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Get the 3AM checklist</h2>
+        <p>A printable bedside setup checklist for tired nights. Product handling notes only; no medical advice.</p>
+      </div>
+      <form class="email-form" action="#" method="post">
+        <input type="email" name="email" placeholder="Email address" aria-label="Email address" />
+        <button class="button" type="submit">Notify me</button>
+      </form>
+    </div>
+  </section>
+</BaseLayout>
+

@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Lab Notes | QuietBabyGear";
+const description = "Dated QuietBabyGear lab notes from baby gear cleaning, sound, leakage, and maintenance tests.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Raw observations</p>
+          <h1>Lab Notes</h1>
+        </div>
+        <p>Lab Notes are short dated records from actual product handling. They are meant to preserve what happened before it becomes a polished article.</p>
+      </div>
+      <div class="note-grid">
+        <article class="note">
+          <p class="eyebrow">Coming first</p>
+          <h3>Unboxing friction notes</h3>
+          <p>Parts count, first-cleaning confusion, instruction clarity, and setup time.</p>
+        </article>
+        <article class="note">
+          <p class="eyebrow">Coming first</p>
+          <h3>3AM cleaning trial</h3>
+          <p>Timed cleaning under warm low light with one hand occupied.</p>
+        </article>
+        <article class="note">
+          <p class="eyebrow">Coming first</p>
+          <h3>Day 7 dry-down check</h3>
+          <p>Dead corners, lingering moisture, odor notes, and inspection difficulty.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+

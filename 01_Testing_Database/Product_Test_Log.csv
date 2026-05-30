@@ -1,0 +1,7 @@
+product_id,brand,model,category,positioning,purchase_channel,purchase_price_usd,arrival_date,test_start_date,mct_seconds,cleaning_parts_count,sss_background_db,sss_low_db,sss_high_db,ooh_score,crs_score,dts_seconds,lfi_score,mrs_day_7,mrs_day_14,mrs_day_30,bdi_uses_per_charge,top_friction,main_strength,article_status,asset_folder
+QBG-ASP-001,Nosiboo,Pro,nasal aspirator,premium,,,,,,,,,,,,,,,,,,,,not_started,05_Asset_Library/QBG-ASP-001_Nosiboo_Pro
+QBG-ASP-002,Grownsy,Electric,nasal aspirator,value,,,,,,,,,,,,,,,,,,,,not_started,05_Asset_Library/QBG-ASP-002_Grownsy_Electric
+QBG-ASP-003,Frida,NoseFrida,nasal aspirator,manual classic,,,,,,,,,,,,,,,,,,,,not_started,05_Asset_Library/QBG-ASP-003_Frida_NoseFrida
+QBG-ASP-004,Braun,Electric,nasal aspirator,brand trust,,,,,,,,,,,,,,,,,,,,not_started,05_Asset_Library/QBG-ASP-004_Braun_Electric
+QBG-ASP-005,Momcozy,BreezyClear,nasal aspirator,new brand,,,,,,,,,,,,,,,,,,,,not_started,05_Asset_Library/QBG-ASP-005_Momcozy_BreezyClear
+
