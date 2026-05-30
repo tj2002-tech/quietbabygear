@@ -17,6 +17,8 @@ This project is designed for the GitHub -> Cloudflare Pages route.
 - Project name: `quietbabygear`
 - Pages subdomain: `quietbabygear.pages.dev`
 - GitHub repo: `tj2002-tech/quietbabygear`
+- Production URL: `https://quietbabygear.com`
+- Canonical domain: `quietbabygear.com`
 
 ## Custom domain
 
