@@ -12,6 +12,12 @@ This project is designed for the GitHub -> Cloudflare Pages route.
 - Build output directory: `dist`
 - Node.js version: `22` or latest Cloudflare-supported LTS
 
+## Created project
+
+- Project name: `quietbabygear`
+- Pages subdomain: `quietbabygear.pages.dev`
+- GitHub repo: `tj2002-tech/quietbabygear`
+
 ## Custom domain
 
 Add:
@@ -44,4 +50,3 @@ with Beehiiv, Brevo, ConvertKit, or another email provider endpoint.
 ## Local note
 
 If local `npm install` is slow or blocked, Cloudflare Pages can still install dependencies in its build environment after the project is pushed to GitHub.
-
