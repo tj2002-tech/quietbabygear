@@ -6,13 +6,15 @@
 
 ## 首批产品
 
+第一轮先买 3 个，用来做 Pilot Test。第二轮再补 2 个，升级成 5-product comparison。
+
 | 编号 | 产品 | 定位 | 优先级 | 采购状态 | 备注 |
 |---|---|---|---|---|---|
-| QBG-ASP-001 | Nosiboo Pro | 高端 | P0 | 待采购 | 高价位参考组 |
+| QBG-ASP-001 | Frida NoseFrida | 手动经典 | P0 | 待采购 | 第一轮必须买，manual benchmark |
 | QBG-ASP-002 | Grownsy Electric | 性价比 | P0 | 待采购 | Amazon 转化潜力 |
-| QBG-ASP-003 | Frida NoseFrida | 手动经典 | P0 | 待采购 | 用户熟悉，适合对照 |
-| QBG-ASP-004 | Braun Electric | 品牌型 | P1 | 待采购 | 品牌信任组 |
-| QBG-ASP-005 | Momcozy BreezyClear | 新锐品牌 | P1 | 待采购 | 品牌联盟潜力 |
+| QBG-ASP-003 | Braun Electric | 品牌型 | P0 | 待采购 | 第一轮电动品牌对照 |
+| QBG-ASP-004 | Nosiboo Pro 或 Dr. Noze Best NozeBot | 高端 | P1 | 待采购 | 第二轮高价参考组，二选一 |
+| QBG-ASP-005 | Momcozy BreezyClear 或 Frida Electric NoseFrida Pro | 新锐/升级款 | P1 | 待采购 | 第二轮功能复杂度对照 |
 
 ## 替换规则
 
@@ -31,4 +33,3 @@
 - 拍首次拆洗
 - 记录初始电量或供电方式
 - 建立独立素材文件夹
-

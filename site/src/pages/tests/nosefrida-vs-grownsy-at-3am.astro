@@ -1,0 +1,198 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const title = "NoseFrida vs Grownsy at 3AM | Manual vs Electric Nasal Aspirator Cleaning Test";
+const description = "A first-round QuietBabyGear pilot test comparing Frida Baby NoseFrida and Grownsy Electric Nasal Aspirator for cleaning reset, parts friction, sound, and one-handed use.";
+
+const imageBase = "/images/tests/nosefrida-vs-grownsy";
+const photos = [
+  {
+    src: `${imageBase}/nosefrida-01-packaging.jpg`,
+    alt: "Frida Baby NoseFrida packaging used in the QuietBabyGear pilot test",
+    caption: "NoseFrida packaging. The box includes one nasal aspirator and hygiene filters."
+  },
+  {
+    src: `${imageBase}/nosefrida-02-parts.jpg`,
+    alt: "NoseFrida manual nasal aspirator parts laid flat on a wooden table",
+    caption: "NoseFrida parts layout: tube, blue collection chamber, red mouthpiece, and disposable filter."
+  },
+  {
+    src: `${imageBase}/nosefrida-03-cleaning-reset.jpg`,
+    alt: "NoseFrida box, tube, chamber, and replacement filters after cleaning reset",
+    caption: "NoseFrida reset setup. The main friction is less about noise and more about manual use plus filter handling."
+  },
+  {
+    src: `${imageBase}/nosefrida-04-bedside.jpg`,
+    alt: "NoseFrida tube and nasal tip laid out after disassembly",
+    caption: "NoseFrida disassembled view. The small red mouthpiece and long tube are the main parts to rinse and reset."
+  },
+  {
+    src: `${imageBase}/grownsy-01-packaging.jpg`,
+    alt: "Grownsy nasal aspirator storage case with warranty card",
+    caption: "Grownsy storage case. The electric kit arrives as a more device-like setup than the manual NoseFrida."
+  },
+  {
+    src: `${imageBase}/grownsy-02-parts.jpg`,
+    alt: "Grownsy electric nasal aspirator device on a tabletop",
+    caption: "Grownsy electric nasal aspirator body with display and controls."
+  },
+  {
+    src: `${imageBase}/grownsy-03-cleaning-reset.jpg`,
+    alt: "Grownsy nasal aspirator case showing parts and warning card",
+    caption: "Grownsy parts and warning card. The warning about backflow and keeping the chamber dry matters for cleanup."
+  },
+  {
+    src: `${imageBase}/grownsy-04-sound-meter.jpg`,
+    alt: "Grownsy nasal aspirator held in hand showing SP-1 mode on the display",
+    caption: "Grownsy mode display. This is not a sound-meter reading; a separate dB test is still needed."
+  }
+];
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="prose test-article">
+    <p class="eyebrow">First-round pilot test</p>
+    <h1>NoseFrida vs Grownsy at 3AM</h1>
+    <p class="lead">We started QuietBabyGear's nasal aspirator testing with a simple manual-vs-electric question: when a parent is tired, the room is quiet, and cleanup still has to happen, which product creates less friction?</p>
+
+    <p><strong>Short answer:</strong> NoseFrida looks simpler and silent, but it carries a manual-use hesitation that does not show up in a normal product listing. Grownsy feels easier to start using because it is electric, but its chamber, warning card, modes, charging, and sound all create extra things to manage after use.</p>
+
+    <blockquote>
+      This is a pilot test, not a final ranking. We are using these two products to calibrate our testing protocol before expanding the database.
+    </blockquote>
+
+    <h2>What we compared</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Type</th>
+          <th>Current evidence</th>
+          <th>Biggest early friction</th>
+          <th>Needs retest</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Frida Baby NoseFrida</td>
+          <td>Manual aspirator</td>
+          <td>Packaging, parts, filter setup, reset photos</td>
+          <td>Manual hesitation and filter handling</td>
+          <td>Timed cleaning reset</td>
+        </tr>
+        <tr>
+          <td>Grownsy Electric Nasal Aspirator</td>
+          <td>Electric aspirator</td>
+          <td>Case, device body, parts, warning card, mode display</td>
+          <td>More parts, charging limits, chamber warnings, sound</td>
+          <td>Sound meter and timed cleaning reset</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Why only two products?</h2>
+    <p>Most nasal aspirator comparison pages jump straight to a best list. We are starting smaller on purpose. A two-product manual-vs-electric pilot makes the tradeoff easier to see, and it keeps the first test honest: what changes when suction moves from a parent's mouth to a battery-powered device?</p>
+
+    <h2>Early finding 1: NoseFrida has fewer device problems, but a real hesitation problem</h2>
+    <p>NoseFrida is physically simple: tube, chamber, mouthpiece, nasal tip, and disposable filter. There is no charging state, no motor mode, no beeping, and no dB reading to worry about. That matters in a sleeping room.</p>
+    <p>The tradeoff is psychological and practical. A parent has to be willing to use manual suction when tired. The disposable filter also becomes part of the reset ritual: check it, replace it if needed, and make sure the parts are clean enough for the next use.</p>
+
+    <h2>Early finding 2: Grownsy feels easier to begin, but harder to fully reset</h2>
+    <p>The Grownsy is more device-like. It has a display, selectable suction mode, a collection chamber, silicone tips, a charging cable, and a storage case. That makes it feel easier to start because there is no mouth suction step.</p>
+    <p>But the warning card changes the way we think about cleanup. It warns to turn off the device right after suction to avoid mucus backflow, to avoid letting liquid enter the machine, and to keep the storage chamber clean and dry. Those are exactly the kinds of small details that matter at 3AM.</p>
+
+    <h2>Photo notes</h2>
+    <div class="photo-grid">
+      {photos.map((photo) => (
+        <figure>
+          <img src={photo.src} alt={photo.alt} loading="lazy" />
+          <figcaption>{photo.caption}</figcaption>
+        </figure>
+      ))}
+    </div>
+
+    <h2>What still needs measurement</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>NoseFrida</th>
+          <th>Grownsy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MCT: cleaning reset time</td>
+          <td>Needs one timed reset</td>
+          <td>Needs one timed reset</td>
+        </tr>
+        <tr>
+          <td>SSS: sound</td>
+          <td>No motor noise; manual-use friction only</td>
+          <td>Needs phone dB app reading at around 30 cm</td>
+        </tr>
+        <tr>
+          <td>OOH: one-hand operation</td>
+          <td>Needs handling score</td>
+          <td>Needs handling score</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>What we would buy first for this test</h2>
+    <p>If the question is simply "manual or electric?", these two products are enough for a first-round comparison. NoseFrida gives us the classic manual baseline. Grownsy gives us a common electric baseline with more parts, a display, sound, charging, and chamber maintenance.</p>
+
+    <h2>FAQ</h2>
+    <h3>Is this medical advice?</h3>
+    <p>No. QuietBabyGear tests product handling, cleaning friction, sound, and maintenance. We do not diagnose, treat, or give medical guidance.</p>
+
+    <h3>Why not publish a winner yet?</h3>
+    <p>Because the timed cleaning reset and sound-meter readings are not complete yet. Publishing the friction notes first keeps the record honest.</p>
+
+    <h3>Which one seems easier at night?</h3>
+    <p>Based on the first photo and parts review, NoseFrida appears simpler to reset and silent, while Grownsy may be easier to start using because it avoids manual suction. The final answer depends on timed cleanup and sound testing.</p>
+
+    <h2>Affiliate disclosure</h2>
+    <p>Some links on QuietBabyGear may be affiliate links. This pilot test is based on first-party product handling photos and notes. Affiliate potential does not decide the findings.</p>
+  </article>
+</BaseLayout>
+
+<style>
+  .test-article strong {
+    color: var(--ink);
+  }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin: 28px 0;
+  }
+
+  .photo-grid figure {
+    margin: 0;
+    border: 1px solid var(--line);
+    background: var(--white);
+  }
+
+  .photo-grid img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    background: var(--mist);
+  }
+
+  .photo-grid figcaption {
+    padding: 12px;
+    color: var(--muted);
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  @media (max-width: 720px) {
+    .photo-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
