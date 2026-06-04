@@ -44,7 +44,12 @@ const photos = [
   {
     src: `${imageBase}/grownsy-04-sound-meter.jpg`,
     alt: "Grownsy nasal aspirator held in hand showing SP-1 mode on the display",
-    caption: "Grownsy mode display. This is not a sound-meter reading; a separate dB test is still needed."
+    caption: "Grownsy mode display at SP-1, the lowest suction setting used for the first sound check."
+  },
+  {
+    src: `${imageBase}/grownsy-05-sound-meter-real.jpg`,
+    alt: "Grownsy nasal aspirator SP-1 sound meter reading showing 46 dB",
+    caption: "SP-1 sound check with a phone decibel meter, reading about 46 dB in this setup."
   }
 ];
 ---
@@ -54,8 +59,9 @@ const photos = [
     <p class="eyebrow">First-round pilot test</p>
     <h1>NoseFrida vs Grownsy at 3AM</h1>
     <p class="lead">We started QuietBabyGear's nasal aspirator testing with a simple manual-vs-electric question: when a parent is tired, the room is quiet, and cleanup still has to happen, which product creates less friction?</p>
+    <p>By <strong>3AM</strong>, we mean the low-light, half-awake parent scenario: one hand free, a quiet room, and very little patience for complicated cleanup.</p>
 
-    <p><strong>Short answer:</strong> NoseFrida looks simpler and silent, but it carries a manual-use hesitation that does not show up in a normal product listing. Grownsy feels easier to start using because it is electric, but its chamber, warning card, modes, charging, and sound all create extra things to manage after use.</p>
+    <p><strong>Short answer:</strong> NoseFrida reset faster in this first round, roughly 60-90 seconds, and stayed completely silent because it has no motor. Grownsy took roughly 120-180 seconds to reset because there are more parts and more device-specific warnings to manage, but it avoids the mouth-suction hesitation that some parents have with manual aspirators.</p>
 
     <blockquote>
       This is a pilot test, not a final ranking. We are using these two products to calibrate our testing protocol before expanding the database.
@@ -67,25 +73,25 @@ const photos = [
         <tr>
           <th>Product</th>
           <th>Type</th>
-          <th>Current evidence</th>
-          <th>Biggest early friction</th>
-          <th>Needs retest</th>
+          <th>Cleaning reset</th>
+          <th>Sound</th>
+          <th>Biggest friction</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Frida Baby NoseFrida</td>
           <td>Manual aspirator</td>
-          <td>Packaging, parts, filter setup, reset photos</td>
-          <td>Manual hesitation and filter handling</td>
-          <td>Timed cleaning reset</td>
+          <td>About 60-90 sec</td>
+          <td>No motor noise</td>
+          <td>Manual suction hesitation and disposable filter replacement</td>
         </tr>
         <tr>
           <td>Grownsy Electric Nasal Aspirator</td>
           <td>Electric aspirator</td>
-          <td>Case, device body, parts, warning card, mode display</td>
-          <td>More parts, charging limits, chamber warnings, sound</td>
-          <td>Sound meter and timed cleaning reset</td>
+          <td>About 120-180 sec</td>
+          <td>About 46 dB on SP-1 in our phone-meter check</td>
+          <td>More parts, charging limits, chamber warnings, and higher-setting vibration</td>
         </tr>
       </tbody>
     </table>
@@ -94,12 +100,15 @@ const photos = [
     <p>Most nasal aspirator comparison pages jump straight to a best list. We are starting smaller on purpose. A two-product manual-vs-electric pilot makes the tradeoff easier to see, and it keeps the first test honest: what changes when suction moves from a parent's mouth to a battery-powered device?</p>
 
     <h2>Early finding 1: NoseFrida has fewer device problems, but a real hesitation problem</h2>
-    <p>NoseFrida is physically simple: tube, chamber, mouthpiece, nasal tip, and disposable filter. There is no charging state, no motor mode, no beeping, and no dB reading to worry about. That matters in a sleeping room.</p>
-    <p>The tradeoff is psychological and practical. A parent has to be willing to use manual suction when tired. The disposable filter also becomes part of the reset ritual: check it, replace it if needed, and make sure the parts are clean enough for the next use.</p>
+    <p>NoseFrida is physically simple: tube, chamber, mouthpiece, nasal tip, and disposable filter. In this first reset check, the whole structure felt quick because there were only a few pieces to handle, and the reset took roughly 60-90 seconds.</p>
+    <p>The strongest advantage is control. Because the parent provides suction directly, the strength can be adjusted instantly and can feel stronger than many portable electric aspirators. It is also completely silent and easy to pack for travel.</p>
+    <p>The tradeoff is psychological and practical. A parent has to be willing to use mouth suction when tired. The disposable hygiene filter also becomes part of the reset ritual, and replacement filters add ongoing consumable cost.</p>
 
     <h2>Early finding 2: Grownsy feels easier to begin, but harder to fully reset</h2>
     <p>The Grownsy is more device-like. It has a display, selectable suction mode, a collection chamber, silicone tips, a charging cable, and a storage case. That makes it feel easier to start because there is no mouth suction step.</p>
-    <p>But the warning card changes the way we think about cleanup. It warns to turn off the device right after suction to avoid mucus backflow, to avoid letting liquid enter the machine, and to keep the storage chamber clean and dry. Those are exactly the kinds of small details that matter at 3AM.</p>
+    <p>The biggest advantage is convenience. Button operation is easier to start, and the light and music features may help distract a baby who resists face-adjacent tools. The SP-1 sound check read about 46 dB on a phone decibel meter in this setup, which is quiet enough for a first-round low setting note.</p>
+    <p>But the warning card changes the way we think about cleanup. It warns to turn off the device right after suction to avoid mucus backflow, to avoid letting liquid enter the machine, and to keep the storage chamber clean and dry. The reset took roughly 120-180 seconds in this first round, partly because there are more parts and more caution steps than with NoseFrida.</p>
+    <p>Grownsy also has a limit that does not show up in a simple product photo: stubborn dried mucus still needs softening first. At higher settings, sensitive babies may react to the face-adjacent vibration and sound even if SP-1 is relatively quiet.</p>
 
     <h2>Photo notes</h2>
     <div class="photo-grid">
@@ -111,7 +120,7 @@ const photos = [
       ))}
     </div>
 
-    <h2>What still needs measurement</h2>
+    <h2>First-round data</h2>
     <table class="data-table">
       <thead>
         <tr>
@@ -123,34 +132,34 @@ const photos = [
       <tbody>
         <tr>
           <td>MCT: cleaning reset time</td>
-          <td>Needs one timed reset</td>
-          <td>Needs one timed reset</td>
+          <td>About 60-90 seconds</td>
+          <td>About 120-180 seconds</td>
         </tr>
         <tr>
           <td>SSS: sound</td>
           <td>No motor noise; manual-use friction only</td>
-          <td>Needs phone dB app reading at around 30 cm</td>
+          <td>About 46 dB on SP-1 with a phone decibel meter</td>
         </tr>
         <tr>
           <td>OOH: one-hand operation</td>
-          <td>Needs handling score</td>
-          <td>Needs handling score</td>
+          <td>Simple parts, but requires parent mouth suction</td>
+          <td>Button-operated and easier to start one-handed</td>
         </tr>
       </tbody>
     </table>
 
     <h2>What we would buy first for this test</h2>
-    <p>If the question is simply "manual or electric?", these two products are enough for a first-round comparison. NoseFrida gives us the classic manual baseline. Grownsy gives us a common electric baseline with more parts, a display, sound, charging, and chamber maintenance.</p>
+    <p>If the question is simply "manual or electric?", these two products are enough for a first-round comparison. NoseFrida gives us the classic manual baseline: fast, silent, and strong when the parent is comfortable using it. Grownsy gives us a common electric baseline: easier to begin, more soothing features, but more cleanup and device management.</p>
 
     <h2>FAQ</h2>
     <h3>Is this medical advice?</h3>
     <p>No. QuietBabyGear tests product handling, cleaning friction, sound, and maintenance. We do not diagnose, treat, or give medical guidance.</p>
 
     <h3>Why not publish a winner yet?</h3>
-    <p>Because the timed cleaning reset and sound-meter readings are not complete yet. Publishing the friction notes first keeps the record honest.</p>
+    <p>Because this is still a two-product pilot, not a full category test. The early data is useful, but we need more products before publishing a true ranking.</p>
 
     <h3>Which one seems easier at night?</h3>
-    <p>Based on the first photo and parts review, NoseFrida appears simpler to reset and silent, while Grownsy may be easier to start using because it avoids manual suction. The final answer depends on timed cleanup and sound testing.</p>
+    <p>NoseFrida appears easier to reset and is completely silent. Grownsy appears easier to start using because it avoids manual suction, but it takes longer to reset and adds device noise, charging, and chamber-cleaning concerns.</p>
 
     <h2>Affiliate disclosure</h2>
     <p>Some links on QuietBabyGear may be affiliate links. This pilot test is based on first-party product handling photos and notes. Affiliate potential does not decide the findings.</p>
