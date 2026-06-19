@@ -3,9 +3,22 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const title = "What Is a 3AM Cleaning Test? | QuietBabyGear";
 const description = "QuietBabyGear's 3AM Cleaning Test explains how we measure baby gear cleanup friction under tired, low-light parent conditions.";
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "What Is a 3AM Cleaning Test?",
+  description,
+  datePublished: "2026-06-04",
+  dateModified: "2026-06-19",
+  author: {
+    "@type": "Organization",
+    name: "QuietBabyGear"
+  },
+  mainEntityOfPage: "https://quietbabygear.com/methodology/3am-cleaning-test/"
+};
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
   <article class="prose">
     <p class="eyebrow">Methodology note</p>
     <h1>What is a 3AM Cleaning Test?</h1>
@@ -37,4 +50,3 @@ const description = "QuietBabyGear's 3AM Cleaning Test explains how we measure b
     <p>This test does not measure medical effectiveness, diagnose congestion, or recommend treatment. It only measures product handling and cleanup friction.</p>
   </article>
 </BaseLayout>
-

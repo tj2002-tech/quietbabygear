@@ -1,0 +1,21 @@
+# QuietBabyGear
+
+QuietBabyGear is a micro consumer research site that tests baby gear handling, cleaning, sound, and maintenance friction under real-world sleep-deprived parenting conditions.
+
+## Core Pages
+
+- Home: https://quietbabygear.com/
+- Testing archive: https://quietbabygear.com/tests/
+- Testing methodology: https://quietbabygear.com/methodology/
+- 3AM Cleaning Test explainer: https://quietbabygear.com/methodology/3am-cleaning-test/
+- Lab Notes: https://quietbabygear.com/lab-notes/
+
+## Current Original Test
+
+- NoseFrida vs Grownsy at 3AM: https://quietbabygear.com/tests/nosefrida-vs-grownsy-at-3am/
+- Lab Note: https://quietbabygear.com/lab-notes/nosefrida-grownsy-first-reset-notes/
+
+## Editorial Boundary
+
+QuietBabyGear does not provide medical advice, diagnosis, treatment guidance, or symptom evaluation. The site tests product handling, cleaning reset time, noise, one-handed operation, and maintenance friction.
+

@@ -4,10 +4,31 @@ import "../styles/global.css";
 interface Props {
   title: string;
   description: string;
+  image?: string;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title, description } = Astro.props;
+const { title, description, image, jsonLd } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const absoluteImage = image ? new URL(image, Astro.site).toString() : undefined;
+const defaultJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "QuietBabyGear",
+    url: "https://quietbabygear.com/",
+    description: "QuietBabyGear tests baby gear handling, cleaning, sound, and maintenance friction under sleep-deprived parenting conditions."
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "QuietBabyGear",
+    url: "https://quietbabygear.com/"
+  }
+];
+const structuredData = jsonLd
+  ? [...defaultJsonLd, ...(Array.isArray(jsonLd) ? jsonLd : [jsonLd])]
+  : defaultJsonLd;
 ---
 
 <!doctype html>
@@ -23,6 +44,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
+    {absoluteImage && <meta property="og:image" content={absoluteImage} />}
+    <meta name="twitter:card" content={absoluteImage ? "summary_large_image" : "summary"} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {absoluteImage && <meta name="twitter:image" content={absoluteImage} />}
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </head>
   <body>
     <div class="site-shell">
@@ -53,4 +80,3 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     </div>
   </body>
 </html>
-

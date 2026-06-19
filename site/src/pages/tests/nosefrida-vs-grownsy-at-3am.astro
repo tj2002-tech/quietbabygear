@@ -3,6 +3,35 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const title = "NoseFrida vs Grownsy at 3AM | Manual vs Electric Nasal Aspirator Cleaning Test";
 const description = "A first-round QuietBabyGear pilot test comparing Frida Baby NoseFrida and Grownsy Electric Nasal Aspirator for cleaning reset, parts friction, sound, and one-handed use.";
+const image = "/images/tests/nosefrida-vs-grownsy/grownsy-05-sound-meter-real.jpg";
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "NoseFrida vs Grownsy at 3AM",
+    description,
+    image: `https://quietbabygear.com${image}`,
+    datePublished: "2026-06-04",
+    dateModified: "2026-06-19",
+    author: {
+      "@type": "Organization",
+      name: "QuietBabyGear"
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "QuietBabyGear"
+    },
+    mainEntityOfPage: "https://quietbabygear.com/tests/nosefrida-vs-grownsy-at-3am/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Tests", item: "https://quietbabygear.com/tests/" },
+      { "@type": "ListItem", position: 2, name: "NoseFrida vs Grownsy at 3AM", item: "https://quietbabygear.com/tests/nosefrida-vs-grownsy-at-3am/" }
+    ]
+  }
+];
 
 const imageBase = "/images/tests/nosefrida-vs-grownsy";
 const photos = [
@@ -54,7 +83,7 @@ const photos = [
 ];
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} image={image} jsonLd={jsonLd}>
   <article class="prose test-article">
     <p class="eyebrow">First-round pilot test</p>
     <h1>NoseFrida vs Grownsy at 3AM</h1>

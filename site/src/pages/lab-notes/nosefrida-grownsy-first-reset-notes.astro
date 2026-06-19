@@ -3,9 +3,22 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const title = "Lab Note: NoseFrida and Grownsy First Reset Notes | QuietBabyGear";
 const description = "First QuietBabyGear lab note comparing NoseFrida and Grownsy cleanup reset friction, sound, and parent handling notes.";
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Lab Note: NoseFrida and Grownsy First Reset Notes",
+  description,
+  datePublished: "2026-06-04",
+  dateModified: "2026-06-19",
+  author: {
+    "@type": "Organization",
+    name: "QuietBabyGear"
+  },
+  mainEntityOfPage: "https://quietbabygear.com/lab-notes/nosefrida-grownsy-first-reset-notes/"
+};
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
   <article class="prose">
     <p class="eyebrow">Lab Note</p>
     <h1>NoseFrida and Grownsy first reset notes</h1>
@@ -57,4 +70,3 @@ const description = "First QuietBabyGear lab note comparing NoseFrida and Growns
     <p>We still need a cleaner repeated timing protocol and a higher-setting sound check for Grownsy. The first SP-1 note is useful, but it does not describe the highest suction mode.</p>
   </article>
 </BaseLayout>
-
