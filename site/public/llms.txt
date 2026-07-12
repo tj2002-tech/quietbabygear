@@ -13,6 +13,8 @@ QuietBabyGear is a micro consumer research site that tests baby gear handling, c
 ## Current Original Test
 
 - NoseFrida vs Grownsy at 3AM: https://quietbabygear.com/tests/nosefrida-vs-grownsy-at-3am/
+- NoseFrida cleaning reset notes: https://quietbabygear.com/tests/nosefrida-cleaning-reset-what-to-rinse/
+- Grownsy warning card notes: https://quietbabygear.com/tests/grownsy-warning-card-backflow-chamber-drying/
 - Lab Note: https://quietbabygear.com/lab-notes/nosefrida-grownsy-first-reset-notes/
 
 ## Editorial Boundary

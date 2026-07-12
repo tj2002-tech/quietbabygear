@@ -1,6 +1,7 @@
 const pages = [
-  ["/", "2026-06-19", "weekly", "1.0"],
-  ["/tests/", "2026-06-19", "weekly", "0.9"],
+  ["/", "2026-07-12", "weekly", "1.0"],
+  ["/tests/", "2026-07-12", "weekly", "0.9"],
+  ["/tests/nosefrida-cleaning-reset-what-to-rinse/", "2026-07-12", "monthly", "0.8"],
   ["/tests/grownsy-warning-card-backflow-chamber-drying/", "2026-06-19", "monthly", "0.8"],
   ["/tests/nosefrida-vs-grownsy-at-3am/", "2026-06-19", "monthly", "0.9"],
   ["/tests/easiest-baby-nasal-aspirator-to-clean-at-3am/", "2026-06-04", "monthly", "0.6"],
