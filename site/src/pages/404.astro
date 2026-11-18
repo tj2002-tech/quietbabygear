@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Page not found | QuietBabyGear";
+const description = "This page does not exist on QuietBabyGear. Find the baby nasal aspirator shortlist, testing results, or methodology instead.";
+---
+
+<BaseLayout title={title} description={description} noindex>
+  <article class="prose">
+    <p class="eyebrow">404 · Page not found</p>
+    <h1>This page is not in the lab.</h1>
+    <p class="lead">The link you followed does not exist on QuietBabyGear. It may have moved, or the address was typed wrong.</p>
+    <div class="actions">
+      <a class="button" href="/best/baby-nasal-aspirators/">See the 3AM shortlist</a>
+      <a class="button secondary" href="/tests/">View testing results</a>
+      <a class="button secondary" href="/">Back home</a>
+    </div>
+    <p>Looking for something else? Try the <a href="/methodology/">testing protocol</a> or <a href="/lab-notes/">Lab Notes</a> — or write to <a href="mailto:contact@quietbabygear.com">contact@quietbabygear.com</a>.</p>
+  </article>
+</BaseLayout>
