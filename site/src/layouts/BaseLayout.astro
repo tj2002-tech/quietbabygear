@@ -6,9 +6,10 @@ interface Props {
   description: string;
   image?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  noindex?: boolean;
 }
 
-const { title, description, image, jsonLd } = Astro.props;
+const { title, description, image, jsonLd, noindex } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const absoluteImage = image ? new URL(image, Astro.site).toString() : undefined;
 const defaultJsonLd = [
@@ -38,12 +39,19 @@ const structuredData = jsonLd
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
+    {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonical} />}
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#26332f" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonical} />
+    {!noindex && <meta property="og:url" content={canonical} />}
     {absoluteImage && <meta property="og:image" content={absoluteImage} />}
     <meta name="twitter:card" content={absoluteImage ? "summary_large_image" : "summary"} />
     <meta name="twitter:title" content={title} />
@@ -60,6 +68,7 @@ const structuredData = jsonLd
             <span>QuietBabyGear</span>
           </a>
           <nav class="nav-links" aria-label="Primary navigation">
+            <a href="/best/baby-nasal-aspirators/">Best picks</a>
             <a href="/tests/">Tests</a>
             <a href="/methodology/">Methodology</a>
             <a href="/lab-notes/">Lab Notes</a>
@@ -75,6 +84,7 @@ const structuredData = jsonLd
         <div class="wrap footer-grid">
           <span>QuietBabyGear tests baby gear handling, cleaning, sound, and maintenance friction.</span>
           <span>No medical advice. Some links may be affiliate links.</span>
+          <span>Contact: <a href="mailto:contact@quietbabygear.com">contact@quietbabygear.com</a></span>
         </div>
       </footer>
     </div>
