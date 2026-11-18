@@ -1,18 +1,30 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
-const title = "Easiest Baby Nasal Aspirator to Clean at 3AM | QuietBabyGear";
-const description = "A QuietBabyGear timed cleaning test comparing baby nasal aspirators under low-light, sleep-deprived parent conditions.";
+const title = "Easiest Baby Nasal Aspirator to Clean at 3AM | MCT Test Results";
+const description = "Timed 3AM cleaning results so far: NoseFrida resets in about 60-90 seconds, Grownsy in about 120-180 seconds. See the full shortlist for all four models.";
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Tests", item: "https://quietbabygear.com/tests/" },
+      { "@type": "ListItem", position: 2, name: "Easiest Baby Nasal Aspirator to Clean at 3AM", item: "https://quietbabygear.com/tests/easiest-baby-nasal-aspirator-to-clean-at-3am/" }
+    ]
+  }
+];
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
   <article class="prose">
-    <p class="eyebrow">MCT test draft</p>
+    <p class="eyebrow">MCT test · Results so far</p>
     <h1>Easiest Baby Nasal Aspirator to Clean at 3AM</h1>
-    <p class="lead">This page will compare the first five aspirators using QuietBabyGear's Midnight Cleaning Time test. Results will be published after timed cleaning trials and original test media are complete.</p>
+    <p class="lead">Two aspirators have been through the timed 3AM cleaning test so far. The manual NoseFrida resets fastest at about 60–90 seconds; the electric Grownsy takes about 120–180 seconds.</p>
+
+    <p>For the full comparison — including the two models we have not tested yet, with prices verified November 18, 2026 — see the <a href="/best/baby-nasal-aspirators/">baby nasal aspirator shortlist</a>.</p>
 
     <h2>Short conclusion</h2>
-    <p>Pending first-party testing. The final conclusion will identify the easiest aspirator to clean at night, the product with the highest cleanup friction, and who should avoid each model.</p>
+    <p>The easiest aspirator to clean at night in our testing so far is the NoseFrida: fewer parts, no motor, no charging, and no device warnings to manage. The Grownsy is easier to start using, but its reset takes longer and involves more caution steps. The other two models on our list have not been timed yet, so no ranking beyond these two is honest right now.</p>
 
     <h2>Data table</h2>
     <table class="data-table">
@@ -27,25 +39,15 @@ const description = "A QuietBabyGear timed cleaning test comparing baby nasal as
         </tr>
       </thead>
       <tbody>
-        <tr><td>Frida NoseFrida</td><td>Pending</td><td>Pending</td><td>Pending</td><td>Pending</td><td>Awaiting test</td></tr>
-        <tr><td>Grownsy Electric</td><td>Pending</td><td>Pending</td><td>Pending</td><td>Pending</td><td>Awaiting test</td></tr>
-        <tr><td>Nosiboo Pro</td><td>Pending</td><td>Pending</td><td>Pending</td><td>Pending</td><td>Awaiting test</td></tr>
-        <tr><td>Braun Electric</td><td>Pending</td><td>Pending</td><td>Pending</td><td>Pending</td><td>Planned</td></tr>
-        <tr><td>Momcozy BreezyClear</td><td>Pending</td><td>Pending</td><td>Pending</td><td>Pending</td><td>Planned</td></tr>
+        <tr><td>Frida NoseFrida</td><td>About 60–90 sec</td><td>Tube, chamber, mouthpiece, tip, filter</td><td>Simple parts, but requires mouth suction</td><td>Small collection chamber; no motor chamber to flood</td><td>Tested</td></tr>
+        <tr><td>Grownsy Electric</td><td>About 120–180 sec</td><td>Device, chamber, tips, charging cable</td><td>Button-operated, easier to start</td><td>Backflow warning; keep chamber dry</td><td>Tested</td></tr>
+        <tr><td>Braun Electric</td><td>Not measured</td><td>—</td><td>—</td><td>—</td><td>Not tested yet</td></tr>
+        <tr><td>Momcozy BreezyClear</td><td>Not measured</td><td>—</td><td>—</td><td>—</td><td>Not tested yet</td></tr>
       </tbody>
     </table>
 
-    <h2>How we will test</h2>
-    <p>Each aspirator will be used in the same low-light setup. We will start a stopwatch after use, disassemble the parts that require cleaning, rinse them according to the product instructions, set them to dry, and stop the timer when the product is reasonably reset for the next use.</p>
-
-    <h2>Original test media needed</h2>
-    <ul>
-      <li>Stopwatch start and finish photos.</li>
-      <li>Parts layout after disassembly.</li>
-      <li>Cleaning process photos under warm low light.</li>
-      <li>Water residue or hard-to-dry areas.</li>
-      <li>One-handed handling notes.</li>
-    </ul>
+    <h2>How we test</h2>
+    <p>Each aspirator is used in the same low-light setup. We start a stopwatch after use, disassemble the parts that require cleaning, rinse them according to the product instructions, set them to dry, and stop the timer when the product is reasonably reset for the next use. Full method: <a href="/methodology/">Testing Protocol v1</a>.</p>
 
     <h2>FAQ</h2>
     <h3>Is this medical advice?</h3>
@@ -56,4 +58,3 @@ const description = "A QuietBabyGear timed cleaning test comparing baby nasal as
     <p>No. Affiliate links may be added after testing, but the timing data and notes stay independent.</p>
   </article>
 </BaseLayout>
-
