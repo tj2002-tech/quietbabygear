@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const title = "Articles | QuietBabyGear";
+const description = "QuietBabyGear buying guides and explainers built on first-party testing: cleaning time, sound, and maintenance friction under real-world sleep-deprived parenting conditions.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Guides &amp; explainers</p>
+          <h1>Articles</h1>
+        </div>
+        <p>Buying guides and explainers that start from what we measured — not from a spec sheet.</p>
+      </div>
+      <div class="article-list">
+        <a class="article-row" href="/articles/best-nasal-aspirator-for-newborns/">
+          <span class="tag">Guide</span>
+          <div>
+            <h3>Best Nasal Aspirator for Newborns: What Actually Works at 3AM</h3>
+            <p>NoseFrida resets fastest at 60–90 seconds and stays silent; Grownsy is the tested electric alternative at $33.99. Prices verified November 20, 2026.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">-></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
