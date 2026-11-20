@@ -15,6 +15,11 @@ QuietBabyGear is a micro consumer research site that tests baby gear handling, c
 - Best baby nasal aspirator for 3AM cleanup: https://quietbabygear.com/best/baby-nasal-aspirators/
 - MCT cleaning results: https://quietbabygear.com/tests/easiest-baby-nasal-aspirator-to-clean-at-3am/
 
+## Articles
+
+- Articles index: https://quietbabygear.com/articles/
+- Best nasal aspirator for newborns: https://quietbabygear.com/articles/best-nasal-aspirator-for-newborns/
+
 ## Current Original Test
 
 - NoseFrida vs Grownsy at 3AM: https://quietbabygear.com/tests/nosefrida-vs-grownsy-at-3am/
