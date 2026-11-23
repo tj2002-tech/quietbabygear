@@ -1,6 +1,7 @@
 const pages = [
-  ["/", "2026-11-18", "weekly", "1.0"],
-  ["/best/baby-nasal-aspirators/", "2026-11-20", "weekly", "0.9"],
+  ["/", "2026-11-23", "weekly", "1.0"],
+  ["/best/baby-nasal-aspirators/", "2026-11-23", "weekly", "0.9"],
+  ["/deals/black-friday-baby-deals/", "2026-11-23", "weekly", "0.8"],
   ["/articles/", "2026-11-22", "weekly", "0.8"],
   ["/articles/best-nasal-aspirator-for-newborns/", "2026-11-20", "monthly", "0.8"],
   ["/articles/quietest-electric-nasal-aspirator/", "2026-11-22", "monthly", "0.8"],
