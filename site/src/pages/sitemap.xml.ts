@@ -1,10 +1,11 @@
 const pages = [
-  ["/", "2026-11-23", "weekly", "1.0"],
+  ["/", "2026-11-24", "weekly", "1.0"],
   ["/best/baby-nasal-aspirators/", "2026-11-23", "weekly", "0.9"],
   ["/deals/black-friday-baby-deals/", "2026-11-23", "weekly", "0.8"],
-  ["/articles/", "2026-11-22", "weekly", "0.8"],
+  ["/articles/", "2026-11-24", "weekly", "0.8"],
   ["/articles/best-nasal-aspirator-for-newborns/", "2026-11-20", "monthly", "0.8"],
   ["/articles/quietest-electric-nasal-aspirator/", "2026-11-22", "monthly", "0.8"],
+  ["/articles/nosefrida-vs-electric-nasal-aspirator/", "2026-11-24", "monthly", "0.8"],
   ["/tests/", "2026-11-18", "weekly", "0.9"],
   ["/tests/nosefrida-cleaning-reset-what-to-rinse/", "2026-07-12", "monthly", "0.8"],
   ["/tests/grownsy-warning-card-backflow-chamber-drying/", "2026-06-19", "monthly", "0.8"],
